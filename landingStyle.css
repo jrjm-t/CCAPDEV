@@ -1,0 +1,92 @@
+:root{
+    --customOrange:rgb(255, 101, 44);
+}
+
+#content{
+    display:flex;
+    grid-template-columns: auto auto;
+    flex-wrap:nowrap;
+}
+
+#leftFrame{
+    background-image: url("media/Orang.png");
+    background-repeat: repeat-y;
+    width: 960px;
+    height: 910px;
+}
+
+#rightFrame{
+    background-color: white;
+    background-repeat: repeat-y;
+    width: 960px;
+    height: 910px;
+}
+
+#rightTitle{
+    margin-top: 120px;
+    font-size:80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    align-self: center;
+    justify-self: center;
+    width: 600px;
+    text-align: center;
+    word-spacing: 10px;
+    line-height: 70px;
+}
+
+#subtitle{
+    margin-top: 130px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+    align-self: center;
+    justify-self: center;
+    width: 600px;
+    text-align: center;
+    word-spacing: 5px;
+    line-height: 15px;
+}
+
+#createAccount{
+    display:block;
+    margin-top:15px;
+    margin-left:150px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--customOrange);
+    border-radius: 20px;
+    border-width: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: white;
+
+    width:300px;
+}
+
+#label{
+    margin-top:80px;
+    font-size:20px;
+    text-justify: center;
+    color: var(--customOrange);
+    word-spacing: 5px;
+    line-height: 15px;
+}
+
+#login{
+    display:block;
+    margin-top:15px;
+    margin-left: 150px;
+    font-size:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: var(--customOrange);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: var(--customOrange);
+
+    width:300px;
+}
