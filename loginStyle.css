@@ -1,0 +1,93 @@
+:root{
+    --orange2: rgb(255, 182, 77);
+}
+
+#log_in_box{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 200px;
+    width: 766px;
+    min-height: 582px;
+    border-radius: 100px;
+    background-color: var(--orange2);
+    justify-self: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+#LOG_IN{
+    display: block;
+    padding-top:40px;
+    align-self: center;
+    justify-self: center;
+    font-size:64px;
+    font-weight: bold;
+    color: white;
+    margin-top:10px;
+}
+
+#input_group{
+    margin-top:20px;
+}
+
+form{
+    font-size:24px;
+}
+
+label{
+    display:block;
+    margin-top:20px;
+}
+
+input{
+    display: block;
+    margin-top:10px;
+    width: 649px;
+    height: 51px;
+    border-width: 0px;
+    border-radius: 10px;
+    font-size:24px;
+}
+
+#remember_me{
+    display: inline-block;
+    justify-self: left;
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+#remember_label{
+    display: inline-block;
+    font-size: 18px;
+    text-align: top;
+}
+
+#buttonPanel{
+    margin-top:40px;
+    display:block;
+}
+
+button{
+    width: 174px;
+    height: 38px;
+
+    border-radius: 30px;
+    font-size:24px;
+}
+
+#log_in_cancel{
+    display: inline-block;
+    margin-left: 40px;
+    background-color: rgba(254, 110, 32, 0.322);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}
+
+#log_in_2{
+    display: inline-block;
+    margin-left: 230px;
+    background-color: rgb(254, 110, 32);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}
