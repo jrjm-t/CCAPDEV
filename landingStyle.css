@@ -2,6 +2,8 @@
     --customOrange:rgb(254, 111, 32)
 }
 
+/*note: my viewport height is around 920 pixels, not 1080 as previously imagined...*/
+
 .julius-sans-one-regular {
     font-family: "Julius Sans One", serif;
     font-weight: 400;
@@ -25,6 +27,7 @@
 #leftFrame{
     background-image: url(media/background.png);
     background-repeat: repeat-y;
+    background-size: contain;
     width: 50vw;
     height: 113.25vh;
 }
@@ -37,48 +40,48 @@
 }
 
 #pots_and_posts{
-    margin-top:110px;
+    margin-top: 11.9vh; /*110px*/
     justify-self: center;
     font-weight: bolder;
-    font-size:32px;
+    font-size:3.4vh; /*32px*/
 }
 
 #rightTitle{
-    margin-top: 12px;
-    font-size:90px;
+    margin-top: 1.3vh /*12px*/;
+    font-size:9.7vh; /*90px*/
     align-self: center;
     justify-self: center;
-    max-width: 864px;
-    min-height: 91px;
+    max-width: 93.91vh; /*864px*/
+    min-height: 9.89vh; /*91px*/
     text-align: center;
-    /*word-spacing: 10px;*/
-    line-height: 70px;
+    /*word-spacing: 10px*/
+    line-height: 7.608vh; /*70px*/
 }
 
 #subtitle{
-    margin-top: 130px;
-    font-size:20px;
+    margin-top: 14.13vh; /*130px*/
+    font-size:2.17vh; /*20px*/
     align-self: center;
     justify-self: center;
-    max-width: 688px;
+    max-width: 74.78vh; /*688px*/
     text-align: center;
-    /*word-spacing: 5px;*/
-    line-height: 40px;
-    font-size:32px;
+    /*word-spacing: 5px*/
+    line-height: 4.357vh; /*40px*/
+    font-size:3.478vh; /*32px*/
     font-weight:600;
 }
 
 button.landing{
-    width: 474px;
-    min-height: 56px;
-    border-radius: 30px;
-    font-size:32px;
+    width: 24.6875vw; /*474px*/
+    min-height: 6.086vh; /*56px*/
+    border-radius: 30px; /*30px*/
+    font-size:3.478vh; /*32px*/
     justify-self: center;
 }
 
 #createAccount{
     display:block;
-    margin-top:20px;
+    margin-top:2.173vh; /*20px*/
     background-color: var(--customOrange);
     border-color: var(--customOrange);
     color: white;
@@ -86,26 +89,26 @@ button.landing{
 
 #no_acc_button{
     display:block;
-    margin-top:10px;
+    margin-top:1.08vh; /*10px*/
     background-color: var(--customOrange);
     border-color: var(--customOrange);
     color: white;
 }
 
 #already_have_account{
-    margin-top:80px;
+    margin-top:8.695vh; /*80px*/
     text-justify: center;
     color: var(--customOrange);
-    /*word-spacing: 5px;*/
+    /*word-spacing: 5px*/
     line-height: 15px;
-    font-size:32px;
+    font-size:3.478vh; /*32px*/
     font-weight: 300;
     justify-self: center;
 }
 
 #log_in_button{
     display:block;
-    margin-top:26px;
+    margin-top:2.826vh; /*26px*/
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0);
     border-width: 2px;
