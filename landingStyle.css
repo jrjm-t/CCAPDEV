@@ -1,8 +1,11 @@
 :root{
-    --customOrange:rgb(254, 111, 32)
+    --dark-Orange:rgb(254, 111, 32);
+    --light-orange:rgb(255, 182, 77);
 }
 
 /*note: my viewport height is around 920 pixels, not 1080 as previously imagined...*/
+/*also, the landing page, create account page, and log in page all include this stylsheet for uniformity
+while also having their own specific sheets*/
 
 .julius-sans-one-regular {
     font-family: "Julius Sans One", serif;
@@ -17,6 +20,22 @@
   font-style: normal;
 }
 
+.dark-orange{
+    background-color: var(--dark-Orange);
+}
+
+.border, .light-orange{
+    width: 5.88vw; /*113px*/
+    background-color: var(--light-orange);
+    justify-self: center;
+}
+
+.border, .dark-orange{
+    width: 5.88vw; /*113px*/
+    background-color: var(--dark-Orange);
+    justify-self: center;
+}
+
 #content{
     display:flex;
     grid-template-columns: auto auto;
@@ -27,20 +46,19 @@
 #leftFrame{
     background-image: url(media/background.png);
     background-repeat: repeat-y;
-    background-size: contain;
-    width: 50vw;
+    background-size: auto;
+    width: 44.1vw;
     height: 113.25vh;
 }
 
 #rightFrame{
-    background-color: white;
     background-repeat: repeat-y;
     width: 50vw;
     height: 113.25vh;
 }
 
 #pots_and_posts{
-    margin-top: 11.9vh; /*110px*/
+    margin-top: 10vh; /*110px*/
     justify-self: center;
     font-weight: bolder;
     font-size:3.4vh; /*32px*/
@@ -82,23 +100,23 @@ button.landing{
 #createAccount{
     display:block;
     margin-top:2.173vh; /*20px*/
-    background-color: var(--customOrange);
-    border-color: var(--customOrange);
+    background-color: var(--dark-Orange);
+    border-color: var(--dark-Orange);
     color: white;
 }
 
 #no_acc_button{
     display:block;
     margin-top:1.08vh; /*10px*/
-    background-color: var(--customOrange);
-    border-color: var(--customOrange);
+    background-color: var(--dark-Orange);
+    border-color: var(--dark-Orange);
     color: white;
 }
 
 #already_have_account{
     margin-top:8.695vh; /*80px*/
     text-justify: center;
-    color: var(--customOrange);
+    color: var(--dark-Orange);
     /*word-spacing: 5px*/
     line-height: 15px;
     font-size:3.478vh; /*32px*/
@@ -112,6 +130,15 @@ button.landing{
     font-weight: 500;
     background-color: rgba(255, 255, 255, 0);
     border-width: 2px;
-    border-color: var(--customOrange);
-    color: var(--customOrange);
+    border-color: var(--dark-Orange);
+    color: var(--dark-Orange);
+}
+
+/*all buttons across login, creation, and landing page have a transition*/
+button{
+    transition: transform 0.1s;
+}
+
+button:hover{
+    transform: scale(1.01,1);
 }
