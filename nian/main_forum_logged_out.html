@@ -67,8 +67,8 @@
                         <!-- left -->
                         <div class="interactions">
                             <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
-                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
-                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn" onclick="liked('like-1')"><img src="media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                            <button class="btn" onclick="disliked('dislike-1')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
                             <button class="btn"><img src="media/share.png" alt="Share"></button>
                         </div>
                          <!-- right -->
@@ -101,8 +101,8 @@
                         <!-- left -->
                         <div class="interactions">
                             <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
-                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
-                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn" onclick="liked('like-2')"><img src="media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                            <button class="btn" onclick="disliked('dislike-2')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
                             <button class="btn"><img src="media/share.png" alt="Share"></button>
                         </div>
                     </div>
@@ -127,8 +127,8 @@
                         <!-- left -->
                         <div class="interactions">
                             <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
-                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
-                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/upvote.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-3"></button>
                             <button class="btn"><img src="media/share.png" alt="Share"></button>
                         </div>
                          <!-- right -->
@@ -159,8 +159,8 @@
                         <!-- left -->
                         <div class="interactions">
                             <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
-                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
-                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn" onclick="liked('like-4')"><img src="media/upvote.png" alt="Thumbs Up" id="like-4"></button>
+                            <button class="btn" onclick="disliked('dislike-4')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-4"></button>
                             <button class="btn"><img src="media/share.png" alt="Share"></button>
                         </div>
                     </div>
@@ -216,13 +216,36 @@
                         <!-- left -->
                         <div class="interactions">
                             <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
-                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
-                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn" onclick="liked('like-5')"><img src="media/upvote.png" alt="Thumbs Up" id="like-5"></button>
+                            <button class="btn" onclick="disliked('dislike-5')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-5"></button>
                             <button class="btn"><img src="media/share.png" alt="Share"></button>
                         </div>
                     </div>
                 </div>
 
+                 <!--POP UP BUTTON TEMPLATE FOR REFERENCE-->
+                <button id="openModal" onclick="addPopUp('openModal', 'closeModal', 'modal')">Open Modal</button>
+                <div class="modal" id="modal">
+                    <div class="modal-inner">
+                        <h2>Please log-in</h2>
+                        <p>log in blablabla</p>
+                        <button id="closeModal">Close</button>
+                    </div>
+                </div>
+    
+                    
+                <div class="modal btn" id="log-in_popUp">
+                    <div class="modal-inner">
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <button id="sign-up" class="btn">Create an account</button>
+                        <p id="question">Already have an account?</p>
+                        <button id="log-in" class="btn">Log in</button>
+                        <button id="closePopUp" class="btn"><img src="media/close.png"></button>
+                    </div>
+                </div>
             </div>
 
             <div id="right" class="sidebar">
@@ -235,6 +258,6 @@
             </div>
 
         </main>
-
+        <script src="javascript.js"></script>
     </body>
 </html>
