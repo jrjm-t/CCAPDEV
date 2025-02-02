@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <img src="media/ellipse2.png">
+                    <p>username</p>
+                </div>
+                <div id="sidebarMenu">  
+                    <div id="home" class="container current">
+                        <img src="media/home.png">
+                        <p>Home</p>
+                    </div>
+                    <div class="container">
+                        <img src="media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="middle">
+
+                <div class="posts">
+                    <div class="post-header">
+                        <span class="post-avatar">
+                            <img src="media/ellipse3.png" alt="author">
+                        </span>
+                        <span class="post-username">username</span>
+                        <span class="post-date">| 1s ago</span>
+                        <span class="post-edited">edited</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_text" class="post_text">
+                        The height of this box is the max height for where text can be seen, any text 
+                        that spans longer and taller than this height will be continued in a (...) sequence.
+                        <br><br>
+                        The color of this box is what a post looks like when the mouse is hovering over the post.
+                        The edit and trash is only for tweets you created yourself. Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+
+                    </div>
+                    <div class="post-actions">
+                        <!-- left -->
+                        <div class="interactions">
+                            <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn"><img src="media/share.png" alt="Share"></button>
+                        </div>
+                         <!-- right -->
+                        <div class="other-actions">
+                            <button class="btn"><img src="media/edit.png" alt="Edit"></button>
+                            <button class="btn"><img src="media/trash.png" alt="Trash"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts" id="photopost">
+                    <div class="post-header">
+                        <span class="post-avatar">
+                            <img src="media/ellipse3.png" alt="author">
+                        </span>
+                        <span class="post-username">other_username</span>
+                        <span class="post-date">| 1s ago</span>
+                        <span class="post-edited">edited</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_text" class="post_text">
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post
+                    </div>
+                    <div class="post_photo">
+                        <img src="media/sample_photo.png" alt="sample_photo">
+                    </div>
+                    <div class="post-actions">
+                        <!-- left -->
+                        <div class="interactions">
+                            <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn"><img src="media/share.png" alt="Share"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post-header">
+                        <span class="post-avatar">
+                            <img src="media/ellipse3.png" alt="author">
+                        </span>
+                        <span class="post-username">other_other_username</span>
+                        <span class="post-date">| 1s ago</span>
+                        <span class="post-edited">edited</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_text" class="post_text">
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post
+                    </div>
+                    <div class="post-actions">
+                        <!-- left -->
+                        <div class="interactions">
+                            <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn"><img src="media/share.png" alt="Share"></button>
+                        </div>
+                         <!-- right -->
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post-header">
+                        <span class="post-avatar">
+                            <img src="media/ellipse3.png" alt="author">
+                        </span>
+                        <span class="post-username">some_username</span>
+                        <span class="post-date">| 1s ago</span>
+                        <span class="post-edited">edited</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_text" class="post_text">
+                        The height of this box is the max height for where text can be seen, any text 
+                        that spans longer and taller than this height will be continued in a (...) sequence.
+                        <br><br>
+                        The color of this box is what a post looks like when the mouse is hovering over the post.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+    
+                    </div>
+                    <div class="post-actions">
+                        <!-- left -->
+                        <div class="interactions">
+                            <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn"><img src="media/share.png" alt="Share"></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <div class="post-header">
+                        <span class="post-avatar">
+                            <img src="media/ellipse3.png" alt="author">
+                        </span>
+                        <span class="post-username">diff_username</span>
+                        <span class="post-date">| 1s ago</span>
+                        <span class="post-edited">edited</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_text" class="post_text">
+                        The height of this box is the max height for where text can be seen, any text 
+                        that spans longer and taller than this height will be continued in a (...) sequence.
+                        <br><br>
+                        The color of this box is what a post looks like when the mouse is hovering over the post.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                        Lorem ipsum dolor sit amet 
+                        consectetur adipisicing elit. Iste minus commodi repudiandae tempora eveniet magni doloribus 
+                        facere odit atque ab, veniam praesentium iure? Consequuntur et accusamus facere, sunt a odio.
+                    </div>
+                    <div class="post-actions">
+                        <!-- left -->
+                        <div class="interactions">
+                            <button class="btn"><img src="media/message-circle.png" alt="Comment"></button>
+                            <button class="btn" onclick="liked('like-3')"><img src="media/thumb_up.png" alt="Thumbs Up" id="like-3"></button>
+                            <button class="btn" onclick="disliked('dislike-3')"><img src="media/thumb_down.png" alt="Thumbs Down" id="dislike-3"></button>
+                            <button class="btn"><img src="media/share.png" alt="Share"></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+    </body>
+</html>
