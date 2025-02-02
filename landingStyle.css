@@ -89,6 +89,7 @@ while also having their own specific sheets*/
     font-weight:600;
 }
 
+/*formatting applied to all buttons classified as part of the landing*/
 button.landing{
     width: 24.6875vw; /*474px*/
     min-height: 6.086vh; /*56px*/
@@ -97,7 +98,18 @@ button.landing{
     justify-self: center;
 }
 
-#createAccount{
+/*all buttons across login, creation, and landing page have a transition*/
+button{
+    transition: transform 0.1s;
+    color: color 1s;
+}
+
+button:hover{
+    transform: scale(1.01,1);
+    color: rgb(1, 1, 161) !important;
+}
+
+#create_acc_button{
     display:block;
     margin-top:2.173vh; /*20px*/
     background-color: var(--dark-Orange);
@@ -132,13 +144,4 @@ button.landing{
     border-width: 2px;
     border-color: var(--dark-Orange);
     color: var(--dark-Orange);
-}
-
-/*all buttons across login, creation, and landing page have a transition*/
-button{
-    transition: transform 0.1s;
-}
-
-button:hover{
-    transform: scale(1.01,1);
 }
