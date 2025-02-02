@@ -1,0 +1,283 @@
+body{
+    margin: 0;
+}
+
+/*HEADER ELEMENTS*/
+header{
+    background-color: #FFB64D;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border: 1px solid #FF9600;
+}
+#headerText{
+    font-family:"Julius Sans One";
+    position: absolute;
+    top: 34px;
+    left: 130px;
+    font-size: 32px;
+}
+#logo_bg{
+    position: absolute;
+    left: 30px;
+}
+#logo{
+    position: absolute;
+    top: 18px;
+    left: 52px;
+}
+
+/*SIDEBARS*/
+.sidebar{
+    width: 18%;
+    height: 100dvh;
+    background-color: #fff;
+    position: fixed;
+    top: 102px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/*LEFT SIDEBAR*/
+/*USER SECTION*/
+#left{
+    left: 0;
+    border-right: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+#user{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#user img{
+    display: inline-block;
+    height: 66px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+#user p{
+    display: inline;
+    font-family: "Inter";
+    font-size: 20px;
+    position: absolute;
+    top: 22px;
+    left: 100px;
+}
+
+/*SIDEBAR MENU*/
+#sidebarMenu{
+    display:flex;
+    flex-direction: column; /*align elements vertically and evenly*/
+    align-items: start;
+    margin-top: 40px;  
+    margin-left: 40px;
+}
+.container {
+    display: flex;
+    align-items: center; /*align all elements inside*/
+    justify-content: flex-start; /*starts at left*/
+    width: 100%;
+    padding: 8px 15px; /*for consistent spacing*/
+    border-radius: 30px; 
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+.container img {
+    position: static; 
+    height: 40px;
+    margin-right: 10px;
+}
+.container p {
+    position: static; 
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+}
+.current{
+    height: 55px;
+    width: 89%;
+    background-color: #FFB243;
+    border-radius: 30px;
+    padding: 8px 15px; /* Match padding with `.container` */
+}
+#post p{
+    color: #FE6F20;
+}
+
+/*RIGHT SIDEBAR*/
+#right{
+    right: 0;
+    border-left: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+.search{
+    --padding: 14px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    border: 2px solid #FE6F20;
+    position: absolute;
+    top: 3%;
+    left: 7%;
+}
+.search-input{
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #FE6F20;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent; 
+}
+.search-input::placeholder{
+    color:#FE6F20;
+}
+
+/*LINK FORMATTING*/
+a{
+    text-decoration: none;
+    text-decoration-color: inherit;
+}
+a:visited{
+    color:inherit;
+}
+a:hover{
+    color:#FE6F20;
+}
+.comment_box a:hover{
+    color:inherit;
+}
+
+/*BUTTON FORMATTING*/
+.btn{
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+}
+
+
+/*MIDDLE SECTION*/
+#middle {
+    position: absolute;
+    top: 102px;
+    left: 18%;
+    right: 18%;
+    bottom: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*EDIT/MAKE POST SECTION*/
+/* Make the entire box peachy and rounded */
+#makePostSection {
+    background-color: #FFE2B4; /* or #FFE0B2, #FFECB3, etc. */
+    border-radius: 16px;
+    padding: 35px;
+    margin-top: 40px;
+    width: 95%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+/*The textarea*/
+#postInput {
+    font-family: "Inter", sans-serif;
+    background-color: transparent;
+    width: 100%;
+    height: 150px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+  } 
+/*post button at the bottom*/
+#postBtn {
+    position: absolute; /* Use absolute to freely position it */
+    bottom: 20px; /* Set distance from the bottom */
+    right: 20px; /* Set distance from the right edge */
+    background-color: #FE6F20;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
+/*POST FORMAT*/
+.post_box, .comment_box {
+    border-bottom: 1px solid #ffcb82;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Inter";
+    position: relative;
+}
+/* Child elements inside any .post_box */
+.post_username_section{
+    display:flex;
+    margin-bottom: 8px;
+    align-items: center;
+    gap: 10px;
+}
+.post_profile_pic{
+    position:relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.post_username {
+    font-size: 14px;
+    color: #555;
+}
+.post_box .post_header {
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.post_edit_indicator {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #888;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+.post_box .post_text {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.post_box .post_interactions img {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+
+/*COMMENT FORMATTING
+    - the formatting for posts and comments are the 
+      same for username and edited satus
+*/
+.comment_box .post_text {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.comment_box .post_interactions img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
