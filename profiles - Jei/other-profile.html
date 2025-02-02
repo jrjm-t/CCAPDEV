@@ -62,7 +62,10 @@
 
                 <!-- FIRST POST -->
                 <div id="post_box" class="post_box">
-                    <div id="post_username" class="post_username">other_username | Jan 27</div>
+                    <div class="post_username_section">
+                        <img src="media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">other_profile | Jan 27</span>
+                    </div>
                     <div id="post_header" class="post_header">Header</div>
                     <div id="post_edit_indicator" class="post_edit_indicator">edited</div>
                     <div id="post_text" class="post_text">
@@ -71,16 +74,19 @@
                         arent there bc its not our post
                     </div>
                     <div id="post_interactions" class="post_interactions">
-                        <img src="media/comment.png" alt="Comment">
-                        <img src="media/upvote.png" alt="Thumbs Up">
-                        <img src="media/downvote.png" alt="Thumbs Down">
-                        <img src="media/share.png" alt="Share">
+                        <button class="btn"><img src="media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="media/share.png" alt="Share"></button>
                     </div>
                 </div>
 
                 <!-- SECOND POST -->
                 <div class="post_box">
-                    <div class="post_username">other_username | Jan 27</div>
+                    <div class="post_username_section">
+                        <img src="media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">other_profile | Jan 27</span>
+                    </div>
                     <div class="post_header">Header</div>
                     <div class="post_edit_indicator">edited</div>
                     <div class="post_text">
@@ -97,11 +103,11 @@
                         and when the text isn’t too long. The edit and delete button 
                         arent there bc its not our post asdashkjd akskashdkjas hdkajshdkjas hd
                     </div>
-                    <div class="post_interactions">
-                        <img src="media/comment.png" alt="Comment">
-                        <img src="media/upvote.png" alt="Thumbs Up">
-                        <img src="media/downvote.png" alt="Thumbs Down">
-                        <img src="media/share.png" alt="Share">
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-2')"><img src="media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                        <button class="btn" onclick="disliked('dislike-2')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
+                        <button class="btn"><img src="media/share.png" alt="Share"></button>
                     </div>
                 </div>
 
@@ -121,6 +127,6 @@
             </div>
 
         </main>
-
+        <script src="javascript.js"></script>
     </body>
 </html>
