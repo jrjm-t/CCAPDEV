@@ -209,10 +209,22 @@ header{
 }
 
 /* Child elements inside any .post_box */
+.post_username_section{
+    display:flex;
+    margin-bottom: 8px;
+    align-items: center;
+    gap: 10px;
+}
 .post_box .post_username {
     margin-bottom: 8px;
     font-size: 14px;
     color: #555;
+}
+.post_profile_pic{
+    position:relative;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
 }
 .post_box .post_header {
     margin-bottom: 8px;
@@ -239,6 +251,14 @@ header{
     margin-top: 10px;
 }
 
+/*BUTTON FORMATTING*/
+.btn{
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+}
+
 #editLogMenu {
     margin-top: 120px;
     margin-left: 40px;
@@ -255,7 +275,6 @@ header{
 
 
 /* edit profile part*/
-/* Make the entire box peachy and rounded */
 #editProfilePage {
     background-color: #FFE2B4; /* or #FFE0B2, #FFECB3, etc. */
     border-radius: 16px;
