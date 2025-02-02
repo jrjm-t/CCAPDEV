@@ -23,10 +23,10 @@
 
             <!-- LEFT SIDEBAR -->
             <div id="left" class="sidebar">
-                <div id="user">
-                    <a href="main-profile.html">
-                    <img src="media/ellipse2.png">
-                    <p>main_profile</p>
+                <div id="log-in">
+                    <a href="#">
+                    <img src="media/log-in.png">
+                    <p>Log in</p>
                     </a>
                 </div>
                 <div id="sidebarMenu">  
@@ -62,7 +62,11 @@
                         arent there bc its not our post
                     </div>
                     <div id="post_interactions" class="post_interactions">
-                        <button class="btn"><img src="media/comment.png" alt="Comment"></button>
+
+                        <button class="btn" id="comment" onclick="addPopUp('comment', 'closePopUp', 'log-in_popUp')">
+                            <img src="media/comment.png" alt="Comment">
+                        </button>
+
                         <button class="btn" onclick="liked('like-1')"><img src="media/upvote.png" alt="Thumbs Up" id="like-1"></button>
                         <button class="btn" onclick="disliked('dislike-1')"><img src="media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
                         <button class="btn"><img src="media/share.png" alt="Share"></button>
@@ -138,6 +142,30 @@
                         <button class="btn"><img src="media/share.png" alt="Share"></button>
                         <a href="edit_post.html" class="btn"><img src="media/edit-post.png" alt="Edit"></a>
                         <button class="btn"><img src="media/delete-post.png" alt="Delete"></button>
+                    </div>
+                </div>
+                
+                <!--POP UP BUTTON TEMPLATE FOR REFERENCE-->
+                <button id="openModal" onclick="addPopUp('openModal', 'closeModal', 'modal')">Open Modal</button>
+                <div class="modal" id="modal">
+                    <div class="modal-inner">
+                        <h2>Please log-in</h2>
+                        <p>log in blablabla</p>
+                        <button id="closeModal">Close</button>
+                    </div>
+                </div>
+
+                
+                <div class="modal btn" id="log-in_popUp">
+                    <div class="modal-inner">
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <button id="sign-up" class="btn">Create an account</button>
+                        <p id="question">Already have an account?</p>
+                        <button id="log-in" class="btn">Log in</button>
+                        <button id="closePopUp" class="btn"><img src="media/close.png"></button>
                     </div>
                 </div>
                 

@@ -40,12 +40,12 @@ header{
 }
 
 /*LEFT SIDEBAR*/
-/*USER SECTION*/
 #left{
     left: 0;
     border-right: 1px solid #f9a825;
     border-bottom: 1px solid #f9a825;
 }
+/*USER SECTION*/
 #user{
     border-bottom: 1px solid #FF9600;
     margin: 0;
@@ -105,6 +105,28 @@ header{
 #post p{
     color: #FE6F20;
 }
+/*LOG IN SECTION WHEN USER IS LOGGED OUT*/
+.sidebar #log-in{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#log-in img{
+    display: inline-block;
+    height: 50px;
+    position: absolute;
+    top: 28px;
+    left: 40px;
+}
+#log-in p{
+    display: inline;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    left: 100px;
+}
 
 /*RIGHT SIDEBAR*/
 #right{
@@ -141,7 +163,7 @@ header{
 /*LINK FORMATTING*/
 a{
     text-decoration: none;
-    text-decoration-color: inherit;
+    color: inherit;
 }
 a:visited{
     color:inherit;
@@ -280,4 +302,93 @@ a:hover{
     height: 20px;
     margin-right: 20px;
     margin-top: 8px;
+}
+
+/*POP-UP BUTTON*/
+.modal{
+    background-color: rgba(0,0,0,0.3); /*adds the dark shadow behind the popup*/
+    opacity: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transition: all 0.3s ease-in-out;
+    z-index:-1; /*when modal (popup) is closed, it is at the back of everything*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    opacity: 1;
+    z-index: 999; /*when modal has the 'open' class, it goes in front of everything*/
+}
+.modal-inner{
+    background-color: white;
+    border: 3px #FE6F20;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    text-align: center;
+    height: 500px;
+    width: 380px;
+    display: flex
+;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.modal-inner h2{
+    margin: 0;
+}
+
+#log-in_popUp #app_name{
+    font-family: 'Inter';
+    font-weight: bold;
+}
+#log-in_popUp h1{
+    font-family: "Julius Sans One";
+    margin-top: -10px;
+    font-weight: 100;
+    font-size: xxx-large;
+}
+#log-in_popUp h2{
+    font-family: 'Inter';
+    font-weight:300
+}
+#log-in_popUp #slogan{
+    position:relative;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+#log-in_popUp #log-in, #sign-up{
+    position: relative;
+
+    background-color: #FE6F20;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    top:-10px;
+}
+#log-in_popUp #question{
+    position:relative;
+    font-family: 'Inter';
+    font-weight: 300;
+    color:#FE6F20;
+}
+#log-in_popUp #log-in{
+    background-color: #FFE2B4;
+    border: 1px #FE6F20;
+    color:#FE6F20;
+    font-weight: bold;
+}
+#log-in_popUp #closePopUp{
+    position: relative;
+    top:25px;
 }

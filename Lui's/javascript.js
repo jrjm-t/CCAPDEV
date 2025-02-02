@@ -15,3 +15,19 @@ function disliked(idName){
         displayImage.src='media/downvote.png'
     }
 }
+
+
+function addPopUp(openButtonId, closeButtonId, popUpId){
+    const openBtn=document.getElementById(openButtonId);
+    const closeBtn=document.getElementById(closeButtonId);
+    const modal=document.getElementById(popUpId);
+
+    //this adds and removes the "open" class from the model
+    //the open class makes the z-index (like, the layer indicator) into 999 (making it appear on top of everything)
+    openBtn.addEventListener("click", ()=>{
+        modal.classList.add("open");
+    });
+    closeBtn.addEventListener("click", ()=>{
+        modal.classList.remove("open");
+});
+}
