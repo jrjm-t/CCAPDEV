@@ -1,0 +1,198 @@
+body{
+    margin: 0;
+}
+
+/*HEADER ELEMENTS*/
+header{
+    background-color: #FFB64D;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border: 1px solid #FF9600;
+}
+#headerText{
+    font-family:"Julius Sans One";
+    position: absolute;
+    top: 34px;
+    left: 130px;
+    font-size: 32px;
+}
+#logo_bg{
+    position: absolute;
+    left: 30px;
+}
+#logo{
+    position: absolute;
+    top: 18px;
+    left: 52px;
+}
+
+/*SIDEBARS*/
+.sidebar{
+    width: 18%;
+    height: 100dvh;
+    background-color: #fff;
+    position: fixed;
+    top: 102px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/*LEFT SIDEBAR*/
+#left{
+    left: 0;
+    border-right: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+/*USER SECTION*/
+#user{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#user img{
+    display: inline-block;
+    height: 66px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+#user p{
+    display: inline;
+    font-family: "Inter";
+    font-size: 20px;
+    position: absolute;
+    top: 22px;
+    left: 100px;
+}
+
+/*SIDEBAR MENU*/
+#sidebarMenu{
+    display:flex;
+    flex-direction: column; /*align elements vertically and evenly*/
+    align-items: start;
+    margin-top: 40px;  
+    margin-left: 40px;
+}
+.container {
+    display: flex;
+    align-items: center; /*align all elements inside*/
+    justify-content: flex-start; /*starts at left*/
+    width: 100%;
+    padding: 8px 15px; /*for consistent spacing*/
+    border-radius: 30px; 
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+.container img {
+    position: static; 
+    height: 40px;
+    margin-right: 10px;
+}
+.container p {
+    position: static; 
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+}
+.current{
+    height: 55px;
+    width: 89%;
+    background-color: #FFB243;
+    border-radius: 30px;
+    padding: 8px 15px; /* Match padding with `.container` */
+}
+#post p{
+    color: #FE6F20;
+}
+/*LOG IN SECTION WHEN USER IS LOGGED OUT*/
+.sidebar #log-in{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#log-in img{
+    display: inline-block;
+    height: 50px;
+    position: absolute;
+    top: 28px;
+    left: 40px;
+}
+#log-in p{
+    display: inline;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    left: 100px;
+}
+
+/*RIGHT SIDEBAR*/
+#right{
+    right: 0;
+    border-left: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+.search{
+    --padding: 14px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    border: 2px solid #FE6F20;
+    position: absolute;
+    top: 3%;
+    left: 7%;
+}
+.search-input{
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #FE6F20;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent; 
+}
+.search-input::placeholder{
+    color:#FE6F20;
+}
+
+/*LINK FORMATTING*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color:inherit;
+}
+a:hover{
+    color:#FE6F20;
+}
+.comment_box a:hover{
+    color:inherit;
+}
+
+/*BUTTON FORMATTING*/
+.btn{
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+}
+
+
+/*MIDDLE SECTION*/
+#middle {
+    position: absolute;
+    top: 102px;
+    left: 18%;
+    right: 18%;
+    bottom: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
