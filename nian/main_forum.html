@@ -3,6 +3,7 @@
     <head>
         <title>Pots & Posts</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
@@ -20,27 +21,32 @@
         </header>
 
         <main>
+
+            <!-- LEFT SIDEBAR -->
             <div id="left" class="sidebar">
                 <div id="user">
+                    <a href="main-profile.html">
                     <img src="../media/ellipse2.png">
-                    <p>username</p>
+                    <p>main_profile</p>
+                    </a>
                 </div>
                 <div id="sidebarMenu">  
-                    <div id="home" class="container current">
+                    <a href="main_forum.html"><div id="home" class="container current">
                         <img src="../media/home.png">
                         <p>Home</p>
-                    </div>
-                    <div class="container">
+                    </div></a> 
+                    <a href="#"><div class="container">
                         <img src="../media/settings.png">
                         <p>Settings</p>
-                    </div>
-                    <div id="post" class="container">
-                        <img src="../media/add_white.png">
+                    </div></a>
+                    <a href="make_post.html"><div id="post" class="container">
+                        <img src="../media/add.png">
                         <p>Post</p>
-                    </div>
+                    </div></a>
                 </div>
             </div>
 
+            <!-- MIDDLE SECTION:-->
             <div id="middle">
 
                 <div class="posts">
@@ -224,6 +230,7 @@
 
             </div>
 
+            <!-- RIGHT SIDEBAR -->
             <div id="right" class="sidebar">
                 <form>
                     <div class="search">

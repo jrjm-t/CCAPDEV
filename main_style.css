@@ -75,6 +75,9 @@ header{
     margin-top: 40px;  
     margin-left: 40px;
 }
+#sidebarMenu a {
+    width: 89%;
+}
 .container {
     display: flex;
     align-items: center; /*align all elements inside*/
@@ -116,7 +119,7 @@ header{
     height: 50px;
     position: absolute;
     top: 28px;
-    left: 40px;
+    left: 0%;
 }
 #log-in p{
     display: inline;
