@@ -73,7 +73,50 @@
 
              <!-- MIDDLE SECTION:-->
             <div id="middle">
-                
+            
+                <!-- POP-UPS
+                function: onclick="addPopUp('id of button that opens the pop-up', 'id of the button to close the pop-up', 'id of the pop-up div')"
+                NOTE: for each instance of a pop-up, you need to have a new button id placed inside for the first parameter
+                      Need the javascript.js file placed in your html: 
+                            <script src="javascript.js"></script>
+                --------------------
+                LOG-IN POP-UP
+                --------------------
+                    <div class="modal btn" id="log-in_popUp">
+                        <div class="modal-inner">
+                            <p id="app_name">POTS & POSTS</p>
+                            <h1>Where Flavors Meets Stories</h1>
+                            <h2>Join the community to comment and post!</h2>
+                            <p id="slogan">Share posts full of taste and pots full of love.</p>
+                            <a href="create_account_page.html"><button id="sign-up" class="btn">Create an account</button></a>
+                            <p id="question">Already have an account?</p>
+                            <a href=".../log_in_page.html"><button id="log-in" class="btn">Log in</button></a>
+                            <button id="closePopUp" class="btn"><img src="media/close.png"></button>
+                        </div>
+                    </div>
+                    
+                    Example of how to place it in the button:
+                        <button class="btn" id="comment" onclick="addPopUp('comment', 'closePopUp', 'log-in_popUp')">
+                            <img src="media/comment.png" alt="Comment">
+                        </button>
+
+                --------------------
+                COMMENT POP-UP
+                --------------------
+                    <div class="modal btn" id="comment_popUp">
+                        <div class="modal-inner">
+                            <button id="close_comment_popUp" class="btn"><img src="media/close.png"></button>
+                            <textarea class="textArea" placeholder="share your thoughts..."></textarea>
+                            <button id="post_comment" class="btn">Comment</button>
+                        </div>
+                    </div>
+
+                    Example of how to place it in the button:
+                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'close_comment_popUp', 'comment_popUp')">
+                            <img src="media/comment.png" alt="Comment">
+                        </button>
+                ----------------------
+                -->
         
             </div>
 
