@@ -284,6 +284,9 @@ header{
     width: 40px;
     border-radius: 50%;
 }
-.modal-inner .btn{
+.modal-inner #sign-up, #log-in{
     width: 100%;;
+}
+#middle a:hover{
+    color: inherit;
 }
