@@ -55,6 +55,7 @@ header{
     position: absolute;
     top: 18px;
     left: 18px;
+    border-radius: 50%;
 }
 #user p{
     display: inline;
@@ -225,6 +226,7 @@ header{
     width: 30px;
     height: 30px;
     display: inline-block;
+    border-radius: 50%;
 }
 .post_box .post_header {
     margin-bottom: 8px;
@@ -243,6 +245,16 @@ header{
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.4;
+    white-space: pre-line;
+}
+#post_photo{
+    display: block;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1%;
 }
 .post_box .post_interactions img {
     width: 24px;
