@@ -44,7 +44,7 @@ while also having their own specific sheets*/
 }
 
 #leftFrame{
-    background-image: url(media/background.png);
+    background-image: url(../media/background.png);
     background-repeat: repeat-y;
     background-size: auto;
     width: 44.1vw;
