@@ -54,9 +54,11 @@ header{
 #user img{
     display: inline-block;
     height: 66px;
+    width: 66px;
     position: absolute;
     top: 18px;
     left: 18px;
+    border-radius: 50%;
 }
 #user p{
     display: inline;
