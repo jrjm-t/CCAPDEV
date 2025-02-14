@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main_profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>SweetTreatsMama</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">
+                    <a href="../nian/main_forum.html">
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a>
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                        <a href="main_profile.html">
+                        <img id="bigPic" src="../media/SweetTreatsMama.png">
+                        <div id="profileDetails">
+                            <h2>SweetTreatsMama</h2></a>
+                        <p>
+                            Written here is my bio, some things about me is that I am blabla. <br>
+                            Bachelors of Computer Science major in software technology <br>
+                            ID123
+                        </p>
+                    </div>
+                </div>
+
+                <!-- The existing edit form container -->
+                <div id="editProfilePage"> 
+                    <div id="editProfileDetails">
+                    <textarea id="bioInput" placeholder="Username..." style="height: 40px; font-size: 30px;"></textarea>
+                    <textarea id="bioInput" placeholder="Write something about yourself..."></textarea>
+                    <button id="saveBtn">Save</button>
+                </div>
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+
+                <div id="editLogMenu">
+                    <div class="container current" id="editProfileItem">
+                        <img src="../media/edit-profile.png" alt="Edit Icon">
+                        <p>Edit Profile</p>
+                    </div>
+                    <div class="container">
+                        <img src="../media/logout.png" alt="Log out Icon">
+                        <p>Log out</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+
+    </body>
+</html>

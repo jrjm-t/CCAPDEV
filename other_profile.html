@@ -1,0 +1,135 @@
+<!-- TEMPLATE:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main-profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>main_profile</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">  
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div>
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                        <a href="other_profile_1.html">
+                        <img id="bigPic" src="../media/SweetTreatsMama.png">
+                        <div id="profileDetails">
+                            <h2>SweetTreatsMama</h2></a>
+                        <p>
+                            🍪 Baking my way through life! <br>
+                            Sharing easy, homemade desserts that bring smiles to every bite.<br>
+                            Let’s bake together! 💕😍
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FIRST POST -->
+                <div id="post_box" class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">other_profile | Jan 27</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- SECOND POST -->
+                <div class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">other_profile | Jan 27</span>
+                    </div>
+                    <div class="post_header">Header</div>
+                    <div class="post_edit_indicator">edited</div>
+                    <div class="post_text">
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post asdashkjd akskashdkjas hdkajshdkjas hd
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post asdashkjd akskashdkjas hdkajshdkjas hd
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post asdashkjd akskashdkjas hdkajshdkjas hd
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post asdashkjd akskashdkjas hdkajshdkjas hd
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-2')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                        <button class="btn" onclick="disliked('dislike-2')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+        <script src="javascript.js"></script>
+    </body>
+</html>
