@@ -22,16 +22,16 @@
 
         <main>
 
-            <!-- LEFT SIDEBAR -->
+            <!-- LEFT SIDEBAR IF LOGGED OUT OF THE ACCOUNT -->
             <div id="left" class="sidebar">
-                <div id="user">
-                    <a href="../nian/main-profile.html">
-                    <img src="../media/SweetTreatsMama.png">
-                    <p>main_profile</p>
+                <div id="log-in">
+                    <a href="../james/landing_page.html">
+                    <img src="../media/log-in.png">
+                    <p>Log in</p>
                     </a>
                 </div>
                 <div id="sidebarMenu">  
-                    <a href="../nian/main_forum.html"><div id="home" class="container">
+                    <a href="../nian/main_forum_logged_out.html"><div id="home" class="container">
                         <img src="../media/home.png">
                         <p>Home</p>
                     </div></a> 
@@ -39,7 +39,7 @@
                         <img src="../media/settings.png">
                         <p>Settings</p>
                     </div></a>
-                    <a href="make_post.html"><div id="post" class="container">
+                    <a href="../james/landing_page.html"><div id="post" class="container">
                         <img src="../media/add.png">
                         <p>Post</p>
                     </div></a>
@@ -50,40 +50,53 @@
             <div id="middle">
                 <!-- POST -->
                 <div class="post_box">
-                    <a href="../jei/main_profile.html"><div class="post_username_section">
-                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
-                        <span class="post_username">SweetTreatsMama | May 31</span>
-                    </div></a>
-                    <div id="post_header" class="post_header">The Cookie Dough Dilemma – To Chill or Not to Chill?</div>
+                    <a href="../james/landing_page.html"><div class="post_username_section">
+                        <img src="../media/GrillMasterMike.png" class="post_profile_pic">
+                        <span class="post_username">GrillMasterMike | Feb 8</span>
+                    </div></a> 
+                    <div id="post_header" class="post_header">🥩 Smoked Brisket – Low & Slow is the Way to Go! 🔥</div>
                     <div id="post_edit_indicator" class="post_edit_indicator"></div>
                     <div id="post_text" class="post_text">
-                        1. Chilling = Less Spreading. Cold dough holds its shape better, giving you thick, chewy cookies instead of flat, sad ones 😥.
-                        <br>2. More Flavor. Letting the dough sit allows the flavors to develop—kind of like marinating meat 🤣!
-                        <br>3. Better Texture. The sugar has time to absorb moisture, leading to that crispy edge & soft center we all love 😍.
+                        Took me years to perfect this, but once you get it right, it’s a game-changer. Here’s my foolproof brisket method:
                         <br>
-                        <br>Short on time? Chill for at least 30 minutes. But if you can, overnight is the best 😚!
-
+                        <br>Ingredients:
+                        <br>12-14 lb whole beef brisket
+                        <br>1/4 cup coarse salt
+                        <br>1/4 cup black pepper
+                        <br>1 tbsp garlic powder
+                        <br>1 tbsp smoked paprika
+                        <br>Instructions:
+                        <br>1️⃣ Trim excess fat, leaving about 1/4 inch.
+                        <br>2️⃣ Rub brisket with salt, pepper, garlic powder & paprika.
+                        <br>3️⃣ Smoke at 225°F for 10-12 hours (until internal temp hits 203°F).
+                        <br>4️⃣ Wrap in butcher paper at 165°F for that perfect bark!
+                        <br>5️⃣ Let it rest for at least 1 hour before slicing.
+                        <br><br>
+                        Patience = juicy, tender brisket. 🤠🔥 #BBQLife #SmokedMeats #GrillSeason
                     </div>
                     <div id="post_interactions" class="post_interactions">
                         
-                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'close_comment_popUp', 'comment_popUp')">
+                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'closePopUp', 'log-in_popUp')">
                             <img src="../media/comment.png" alt="Comment">
                         </button>
 
                         <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
                         <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
                         <button class="btn"><img src="../media/share.png" alt="Share"></button>
-                        <a href="edit_post_1.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
-                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
                     </div>
                 </div>
 
-                <!--Comment pop-up-->
-                <div class="modal btn" id="comment_popUp">
+                <!--Log-in pop-up-->
+                <div class="modal btn" id="log-in_popUp">
                     <div class="modal-inner">
-                        <button id="close_comment_popUp" class="btn"><img src="../media/close.png"></button>
-                        <textarea class="textArea" placeholder="share your thoughts..."></textarea>
-                        <a href="open_post_logged_in_2.html"><button id="post_comment" class="btn">Comment</button></a>
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <a href="../james/create_account_page.html"><button id="sign-up" class="btn">Create an account</button> </a>
+                        <p id="question">Already have an account?</p>
+                        <a href="../james/log_in_page.html"><button id="log-in" class="btn">Log in</button></a>
+                        <button id="closePopUp" class="btn"><img src="../media/close.png"></button>
                     </div>
                 </div>
 

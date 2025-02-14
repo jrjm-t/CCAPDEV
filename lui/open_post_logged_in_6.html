@@ -25,13 +25,13 @@
             <!-- LEFT SIDEBAR -->
             <div id="left" class="sidebar">
                 <div id="user">
-                    <a href="../nian/main-profile.html">
+                    <a href="main-profile.html">
                     <img src="../media/SweetTreatsMama.png">
                     <p>main_profile</p>
                     </a>
                 </div>
                 <div id="sidebarMenu">  
-                    <a href="../nian/main_forum.html"><div id="home" class="container">
+                    <a href="main_forum.html"><div id="home" class="container">
                         <img src="../media/home.png">
                         <p>Home</p>
                     </div></a> 
@@ -50,51 +50,34 @@
             <div id="middle">
                 <!-- POST -->
                 <div class="post_box">
-                    <a href="../jei/main_profile.html"><div class="post_username_section">
-                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
-                        <span class="post_username">SweetTreatsMama | Nov 17</span>
-                    </div></a>
-                    <div id="post_header" class="post_header">Too Many Cookies… Help!</div>
-                    <div id="post_edit_indicator" class="post_edit_indicator">edited</div>
+                    <a href="../jei/other_profile_4.html"><div class="post_username_section">
+                        <img src="../media/ChefInTrainingEm.jpg" class="post_profile_pic">
+                        <span class="post_username">ChefInTrainingEm | Dec 3</span>
+                    </div></a> 
+                    <div id="post_header" class="post_header">My First Attempt at Homemade Pasta! 🍝</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
                     <div id="post_text" class="post_text">
-                        Okay, I may have gone a bit overboard baking this weekend. 😅 My kitchen currently looks like a dessert factory, and I’m running out of counter space.
-                        <br><br>@DadCooksDaily, do your kids want some extra cookies? Because mine are on a sugar high, and I can’t handle another round of “but Mom, just one more!!” 😵‍💫
-                        <br><br>#BakingProblems #HelpMeEatThese #CookieOverload
+                        My First Attempt at Homemade Pasta! 🍝
+                        <br>
+                        <br>Okay, making fresh pasta from scratch is WAY harder than I thought. 
+                        😅 My kitchen is covered in flour, my arms are sore from kneading, and 
+                        somehow there’s dough on my dog?? BUT… after a few failed attempts, 
+                        I finally made a plate of silky, buttery fettuccine, and I feel like a real chef! 👩‍🍳✨
+                        <br>
+                        <br>Next time, I’ll roll it thinner (because wow, my first batch was chunky 😂), 
+                        but I’m calling this a win! Anyone have pasta-making tips for a beginner? 🍝
+                        <br>
+                        <br>#ChefInTraining #HomemadePasta #FlourEverywhere
+                        <img src="../media/homemade_pasta.jpg">
                     </div>
                     <div id="post_interactions" class="post_interactions">
                         
                         <button class="btn" id="comment1" onclick="addPopUp('comment1', 'close_comment_popUp', 'comment_popUp')">
                             <img src="../media/comment.png" alt="Comment">
                         </button>
-                        
+
                         <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
                         <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
-                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
-                        <a href="edit_post_2.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
-                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
-                    </div>
-                </div>
-
-                <!-- COMMENT 1 -->
-                <div class="comment_box">
-                    <a href="../jei/other_profile_1.html"><div class="post_username_section">
-                        <img src="../media/DadCooksDaily.jpg" class="post_profile_pic">
-                        <span class="post_username">DadCooksDaily | Nov 17</span>
-                    </div></a>
-                    <div class="post_edit_indicator"></div>
-                    <div class="post_text">
-                        Oh, you KNOW my kids would never say no to free cookies! 😂 But be warned—once they get a taste, they might start showing up at your door with puppy-dog eyes asking for more.
-                        <br>
-                        <br>Also… for totally unselfish reasons, I’ll take a few too. You know, just to quality check them. 😏🍪 #DadTax #SendCookies
-                    </div>
-                    <div class="post_interactions">
-                        
-                        <button class="btn" id="comment2" onclick="addPopUp('comment2', 'close_comment_popUp', 'comment_popUp')">
-                            <img src="../media/comment.png" alt="Comment">
-                        </button>
-                        
-                        <button class="btn" onclick="liked('like-2')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-2"></button>
-                        <button class="btn" onclick="disliked('dislike-2')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
                         <button class="btn"><img src="../media/share.png" alt="Share"></button>
                     </div>
                 </div>
@@ -104,7 +87,7 @@
                     <div class="modal-inner">
                         <button id="close_comment_popUp" class="btn"><img src="../media/close.png"></button>
                         <textarea class="textArea" placeholder="share your thoughts..."></textarea>
-                        <a href="open_post_logged_in_2.html"><button id="post_comment" class="btn">Comment</button></a>
+                        <button id="post_comment" class="btn">Comment</button>
                     </div>
                 </div>
 

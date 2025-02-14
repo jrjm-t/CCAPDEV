@@ -71,6 +71,10 @@
     font-size: 16px;
     line-height: 1.4;
 }
+.post_text img{
+    max-width: 100%;
+    border-radius: 10px;
+}
 .post_box .post_interactions img {
     width: 24px;
     height: 24px;
