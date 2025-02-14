@@ -59,26 +59,26 @@ while also having their own specific sheets*/
 }
 
 #pots_and_posts{
-    margin-top: 8vh; /*110px*/
+    margin-top: min(8vh,8vw); /*110px*/
     justify-self: center;
     font-weight: bolder;
-    font-size:3.4vh; /*32px*/
+    font-size:3.4vmin; /*32px*/
 }
 
 #rightTitle{
-    margin-top: 1.3vh /*12px*/;
-    font-size:9.7vh; /*90px*/
+    margin-top: 1.3vmin /*12px*/;
+    font-size: min(9.7vh,4.69vw); /*90px*/
     align-self: center;
     justify-self: center;
     max-width: 93.91vh; /*864px*/
     min-height: 9.89vh; /*91px*/
     text-align: center;
     /*word-spacing: 10px*/
-    line-height: 7.608vh; /*70px*/
+    line-height: min(7.608vh,5vw); /*70px*/
 }
 
 #subtitle{
-    margin-top: 14.13vh; /*130px*/
+    margin-top: min(14.13vh,10vw); /*130px*/
     font-size:2.17vh; /*20px*/
     align-self: center;
     justify-self: center;
@@ -86,7 +86,7 @@ while also having their own specific sheets*/
     text-align: center;
     /*word-spacing: 5px*/
     line-height: 4.357vh; /*40px*/
-    font-size:3.478vh; /*32px*/
+    font-size: min(3.478vh,2.3vw); /*32px*/
     font-weight:600;
 }
 
@@ -95,7 +95,7 @@ button.landing{
     width: 24.6875vw; /*474px*/
     min-height: 6.086vh; /*56px*/
     border-radius: 30px; /*30px*/
-    font-size:3.478vh; /*32px*/
+    font-size: min(2.6vw,3.478vh); /*32px*/
     justify-self: center;
 }
 
@@ -112,7 +112,7 @@ button:hover{
 
 #create_acc_button{
     display:block;
-    margin-top:2.173vh; /*20px*/
+    margin-top: min(2.173vh,1.3vw); /*20px*/
     background-color: var(--dark-Orange);
     border-color: var(--dark-Orange);
     color: white;
@@ -127,12 +127,12 @@ button:hover{
 }
 
 #already_have_account{
-    margin-top:8.695vh; /*80px*/
+    margin-top: 8.695vmin; /*80px*/
     text-justify: center;
     color: var(--dark-Orange);
     /*word-spacing: 5px*/
     line-height: 15px;
-    font-size:3.478vh; /*32px*/
+    font-size:3.478vmin; /*32px*/
     font-weight: 300;
     justify-self: center;
 }

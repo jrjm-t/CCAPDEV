@@ -1,8 +1,8 @@
 #create_an_account{
     display: block;
-    margin-top: 6.5vh; /*60px*/
+    margin-top: 6.5vmin; /*60px*/
     text-justify: center;
-    font-size: 6.95vh; /*64px*/
+    font-size: 6.95vmin; /*64px*/
     color: white;
     font-weight: bold;
 }
@@ -13,12 +13,12 @@
 }
 
 form{
-    font-size:2.61vh; /*24px*/
+    font-size:2.61vmin; /*24px*/
 }
 
 input{
     display: block;
-    margin-top:1.08vh; /*10px*/
+    margin-top:1.08vmin; /*10px*/
     width: 33.80vw; /*649px*/
     height: 5.54vh; /*51px*/
     border-width: 0px;
