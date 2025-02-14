@@ -17,17 +17,17 @@
 
 #LOG_IN{
     display: block;
-    padding-top: 4.33vh; /*40px*/
+    padding-top: 4.33vmin; /*40px*/
     align-self: center;
     justify-self: center;
-    font-size:6.94vh; /*64px*/
+    font-size:6.94vmin; /*64px*/
     font-weight: bold;
     color: white;
-    margin-top:1.08vh; /*10px*/
+    margin-top:1.08vmin; /*10px*/
 }
 
 #input_group{
-    margin-top:1.2vh; /*20px*/
+    margin-top:1.2vmin; /*20px*/
 }
 
 form{
