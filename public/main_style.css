@@ -1,0 +1,338 @@
+body{
+    margin: 0;
+}
+
+/*HEADER ELEMENTS*/
+header{
+    background-color: #FFB64D;
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    border: 1px solid #FF9600;
+}
+#headerText{
+    font-family:"Julius Sans One";
+    position: absolute;
+    top: 34px;
+    left: 130px;
+    font-size: 32px;
+}
+#logo_bg{
+    position: absolute;
+    left: 30px;
+}
+#logo{
+    position: absolute;
+    top: 18px;
+    left: 52px;
+}
+
+/*SIDEBARS*/
+.sidebar{
+    width: 18%;
+    height: 100dvh;
+    background-color: #fff;
+    position: fixed;
+    top: 102px;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/*LEFT SIDEBAR*/
+#left{
+    left: 0;
+    border-right: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+/*USER SECTION*/
+#user{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#user img{
+    display: inline-block;
+    height: 66px;
+    width: 66px;
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    border-radius: 50%;
+}
+#user p{
+    display: inline;
+    font-family: "Inter";
+    font-size: 20px;
+    position: absolute;
+    top: 22px;
+    left: 100px;
+}
+
+/*SIDEBAR MENU*/
+#sidebarMenu{
+    display:flex;
+    flex-direction: column; /*align elements vertically and evenly*/
+    align-items: start;
+    margin-top: 40px;  
+    margin-left: 40px;
+}
+#sidebarMenu a {
+    width: 89%;
+}
+.container {
+    display: flex;
+    align-items: center; /*align all elements inside*/
+    justify-content: flex-start; /*starts at left*/
+    width: 100%;
+    padding: 8px 15px; /*for consistent spacing*/
+    border-radius: 30px; 
+    box-sizing: border-box; /* Ensure padding is included in width/height */
+}
+.container img {
+    position: static; 
+    height: 40px;
+    margin-right: 10px;
+}
+.container p {
+    position: static; 
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 500;
+}
+.current{
+    height: 55px;
+    width: 89%;
+    background-color: #FFB243;
+    border-radius: 30px;
+    padding: 8px 15px; /* Match padding with `.container` */
+}
+#post p{
+    color: #FE6F20;
+}
+/*LOG IN SECTION WHEN USER IS LOGGED OUT*/
+.sidebar #log-in{
+    border-bottom: 1px solid #FF9600;
+    margin: 0;
+    height: 100px;
+}
+#log-in img{
+    display: inline-block;
+    height: 50px;
+    position: absolute;
+    top: 28px;
+    left: 40px;
+}
+#log-in p{
+    display: inline;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 22px;
+    position: absolute;
+    top: 19px;
+    left: 100px;
+}
+
+/*RIGHT SIDEBAR*/
+#right{
+    right: 0;
+    border-left: 1px solid #f9a825;
+    border-bottom: 1px solid #f9a825;
+}
+.search{
+    --padding: 14px;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    border: 2px solid #FE6F20;
+    position: absolute;
+    top: 3%;
+    left: 7%;
+}
+.search-input{
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: #FE6F20;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent; 
+}
+.search-input::placeholder{
+    color:#FE6F20;
+}
+
+/*LINK FORMATTING*/
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:visited{
+    color:inherit;
+}
+a:hover{
+    color:#FE6F20;
+}
+.comment_box a:hover{
+    color:inherit;
+}
+
+/*BUTTON FORMATTING*/
+.btn{
+    border:none;
+    cursor:pointer;
+    appearance:none;
+    background-color:inherit;
+}
+
+/*MIDDLE SECTION*/
+#middle {
+    position: absolute;
+    top: 102px;
+    left: 18%;
+    right: 18%;
+    bottom: 0;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/*POP UPS*/
+/*POP-UP BUTTON*/
+.modal{
+    background-color: rgba(0,0,0,0.3); /*adds the dark shadow behind the popup*/
+    opacity: 0;
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    transition: all 0.3s ease-in-out;
+    z-index:-1; /*when modal (popup) is closed, it is at the back of everything*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal.open{
+    opacity: 1;
+    z-index: 999; /*when modal has the 'open' class, it goes in front of everything*/
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-inner{
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+}
+.modal-inner h2{
+    margin: 0;
+}
+
+/*LOG IN POP-UP*/
+#log-in_popUp .modal-inner{
+    background-color: white;
+    border: 3px #FE6F20;
+    border-radius: 5px;
+    text-align: center;
+    height: 500px;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+#log-in_popUp #app_name{
+    font-family: 'Inter';
+    font-weight: bold;
+}
+#log-in_popUp h1{
+    font-family: "Julius Sans One";
+    margin-top: -10px;
+    font-weight: 100;
+    font-size: xxx-large;
+}
+#log-in_popUp h2{
+    font-family: 'Inter';
+    font-weight:300
+}
+#log-in_popUp #slogan{
+    position:relative;
+    font-family: 'Inter';
+    font-weight: 500;
+}
+#log-in_popUp #log-in, #log-in_popUp #sign-up{
+    position: relative;
+    background-color: #FE6F20;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    top:-10px;
+}
+#log-in_popUp #question{
+    position:relative;
+    font-family: 'Inter';
+    font-weight: 300;
+    color:#FE6F20;
+}
+#log-in_popUp #closePopUp{
+    position: relative;
+    top:25px;
+}
+
+/*COMMENT POP-UP*/
+/*The textarea*/
+.textArea {
+    font-family: "Inter", sans-serif;
+    background-color: transparent;
+    width: 100%;
+    height: 150px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    outline: none;
+  } 
+#comment_popUp .modal-inner{
+    background-color: #ffbb5c;
+    border: 3px #FE6F20;
+    border-radius: 5px;
+    text-align: center;
+    height: 100px;
+    width: 380px;
+}
+#comment_popUp textarea{
+    margin: 0px;
+    background-color: #fff;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    bottom: 20px;
+    right: 8px;
+    padding: 10px;
+}
+#close_comment_popUp, #close_comment_popUp img{
+    background-color: transparent;
+    height: 18px;
+    position: relative;
+    left: 100px;
+    bottom: 6px;
+}
+#post_comment{
+    position: relative;
+    background-color: #FE6F20;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    left: 140px;
+    bottom: 18px;
+}

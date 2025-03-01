@@ -1,0 +1,81 @@
+.posts{
+    border: 1px solid #FFE6C1;
+    border-radius: 20px;
+    padding: 30px 30px;
+    margin: 30px;
+    font-family: "Inter";
+    max-height: 300px;
+}
+#photopost.posts{
+    max-height: max-content;
+    overflow: hidden;
+}
+#photopost .post_photo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.posts:hover{
+    background-color: #FFE6C1;
+}
+.posts .post-header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.post-header > span{
+    padding: 5px;
+    font-size: 15px;
+}
+.post-header .post-edited {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #888;
+    position: absolute;
+    right: 10%;
+}
+.post-header .post-date{
+    color: hsl(0, 0%, 50%)
+}
+.posts .post_header {
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.posts .post_text {
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 160px;
+}
+.posts .post-actions img{
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
+    margin-top: 10px;
+}
+.posts .post-actions button{
+    border: none;
+    padding: 0;
+    background: none;
+}
+.post-actions{
+    display: flex;
+    justify-content: space-between;
+}
+.post-actions .other-actions{
+    align-self: flex-end;
+}
+.post-avatar img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.modal-inner #sign-up, #log-in{
+    width: 100%;;
+}
+#middle a:hover{
+    color: inherit;
+}

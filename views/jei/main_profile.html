@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main_profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>SweetTreatsMama</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">  
+                    <a href="../nian/main_forum.html">
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a>
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                    <a href="main_profile.html">
+                    <img id="bigPic" src="../media/SweetTreatsMama.png">
+                    <div id="profileDetails">
+                        <h2>SweetTreatsMama</h2></a>
+                        <p>
+                            🍪 Baking my way through life! <br>
+                            Sharing easy, homemade desserts that bring smiles to every bite.<br>
+                            Let’s bake together! 💕😍
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FIRST POST -->
+                <div id="post_box" class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
+                        <span class="post_username"><a href="main_profile.html">SweetTreatsMama</a>  | Nov 17</span>
+                    </div>
+                    <div id="post_header" class="post_header">Too Many Cookies… Help!</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        Okay, I may have gone a bit overboard baking this weekend. 😅 My kitchen currently looks like a dessert factory, and I’m running out of counter space.
+                        
+                        <a href="other_profile_1.html"> @DadCooksDaily</a>, do your kids want some extra cookies? Because mine are on a sugar high, and I can’t handle another round of “but Mom, just one more!!” 😵‍💫
+                        
+                        #BakingProblems #HelpMeEatThese #CookieOverload
+
+                    </div>
+                    <div class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                        <a href="../lui/edit_post_1.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
+                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
+                    </div>
+                </div>
+
+                <!-- SECOND POST -->
+                <div class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
+                        <span class="post_username"><a href="main_profile.html">SweetTreatsMama</a> | May 31</span>
+                    </div>
+                    <div class="post_header">The Cookie Dough Dilemma – To Chill or Not to Chill?</div>
+                    <div class="post_edit_indicator">edited</div>
+                    <div class="post_text">
+                        1. Chilling = Less Spreading. Cold dough holds its shape better, giving you thick, chewy cookies instead of flat, sad ones 😥.
+                        2. More Flavor. Letting the dough sit allows the flavors to develop—kind of like marinating meat 🤣!
+                        3. Better Texture. The sugar has time to absorb moisture, leading to that crispy edge & soft center we all love 😍.
+
+                        Short on time? Chill for at least 30 minutes. But if you can, overnight is the best 😚!
+                    </div>
+                    <div class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-2')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                        <button class="btn" onclick="disliked('dislike-2')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                        <a href="../lui/edit_post_2.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
+                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+
+                <div id="editLogMenu">
+                    <a href="edit_profile.html">
+                    <div class="container">
+                        <img src="../media/edit-profile.png" alt="Edit Icon">
+                        <p>Edit Profile</p>
+                    </div></a>
+                    <a href="../james/log_in_page.html">
+                    <div class="container">
+                        <img src="../media/logout.png" alt="Log out Icon">
+                        <p>Log out</p>
+                    </div></a>
+                </div>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+        <script src="javascript.js"></script>
+    </body>
+</html>

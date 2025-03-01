@@ -1,0 +1,108 @@
+<!-- TheSpicySpoon:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main_profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>SweetTreatsMama</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu"> 
+                    <a href="../nian/main_forum.html"> 
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a>
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                        <a href="other_profile_3.html">
+                        <img id="bigPic" src="../media/TheSpicySpoon.png">
+                        <div id="profileDetails">
+                            <h2>TheSpicySpoon</h2></a>
+                        <p>
+                            🌶️ Bringing the heat to your kitchen! <br>
+                            Sharing bold, flavorful, and spice-packed recipes for those who love a little kick.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FIRST POST -->
+                <div id="post_box" class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/TheSpicySpoon.png" class="post_profile_pic">
+                        <span class="post_username">TheSpicySpoon | Sept 29</span>
+                    </div>
+                    <div id="post_header" class="post_header">I Have Made a Terrible Mistake… 🌶️🔥💀</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        🚨 SEND HELP. 🚨 I just ate a whole Carolina Reaper, and I am currently reconsidering every life decision I have ever made. I thought I could handle it. I thought, "I eat spicy food all the time, I’ll be fine!" NO. I WAS NOT FINE.
+
+                        Currently debating whether to chug a bottle of ranch dressing or just jump into a pool and hope for the best. Pray for me. 🙃🔥💦
+
+                        #SpiceRegret #SendMilk #NeverAgain (jk, probably again)
+
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+        <script src="javascript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!-- GrillMasterMike:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main_profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>SweetTreatsMama</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">
+                    <a href="../nian/main_forum.html">
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a>
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                        <a href="other_profile_2.html">
+                        <img id="bigPic" src="../media/GrillMasterMike.png">
+                        <div id="profileDetails">
+                            <h2>GrillMasterMike</h2></a>
+                        <p>
+                            🔥 BBQ, grilling, and smoked meats – bringing the backyard flavor to your feed!<br>
+                            Meat, fire, and a little bit of patience = perfection.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FIRST POST -->
+                <div class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/GrillMasterMike.png" class="post_profile_pic">
+                        <span class="post_username">GrillMasterMike | Feb 8</span>
+                    </div>
+                    <div class="post_header">🥩 Smoked Brisket – Low & Slow is the Way to Go! 🔥</div>
+                    <div class="post_edit_indicator">edited</div>
+                    <div class="post_text">
+                        Took me years to perfect this, but once you get it right, it’s a game-changer. Here’s my foolproof brisket method:
+
+                        Ingredients:
+                        
+                        12-14 lb whole beef brisket
+                        1/4 cup coarse salt
+                        1/4 cup black pepper
+                        1 tbsp garlic powder
+                        1 tbsp smoked paprika
+                        Instructions:
+                        1️⃣ Trim excess fat, leaving about 1/4 inch.
+                        2️⃣ Rub brisket with salt, pepper, garlic powder & paprika.
+                        3️⃣ Smoke at 225°F for 10-12 hours (until internal temp hits 203°F).
+                        4️⃣ Wrap in butcher paper at 165°F for that perfect bark!
+                        5️⃣ Let it rest for at least 1 hour before slicing.
+                        
+                        Patience = juicy, tender brisket. 🤠🔥
+                        
+                        #BBQLife #SmokedMeats #GrillSeason                        
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+        <script src="javascript.js"></script>
+    </body>
+</html>

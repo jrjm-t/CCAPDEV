@@ -1,0 +1,93 @@
+:root{
+    --orange2: rgb(255, 182, 77);
+}
+
+#log_in_box{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 16.3vh 21.73vh; /*150px and 200px*/
+    width: 38vw;
+    min-height: 60vh; /*766 by 582 pixels at 1920 * 1080 res*/
+    border-radius: 5.2vw; /*100px*/
+    background-color: var(--orange2);
+    justify-self: center;
+    justify-content: center;
+    margin-top: 6.5vh; /*70px*/
+}
+
+#LOG_IN{
+    display: block;
+    padding-top: 4.33vh; /*40px*/
+    align-self: center;
+    justify-self: center;
+    font-size:6.94vh; /*64px*/
+    font-weight: bold;
+    color: white;
+    margin-top:1.08vh; /*10px*/
+}
+
+#input_group{
+    margin-top:1.2vh; /*20px*/
+}
+
+form{
+    font-size:2.61vh; /*24px*/
+}
+
+label{
+    display:block;
+    margin-top:2.17vh; /*20px*/
+}
+
+input{
+    display: block;
+    margin-top:1.08vh; /*10px*/
+    width: 33vw; /*649px*/
+    height: 5.54vh; /*51px*/
+    border-width: 0px;
+    border-radius: 10px;
+    font-size:2.60vh; /*24px*/
+}
+
+#remember_me{
+    display: inline-block;
+    justify-self: left;
+    width: 2.17vh; /*20px*/
+    height: 2.17vh; /*20px*/
+    vertical-align: bottom;
+}
+
+#remember_label{
+    display: inline-block;
+    font-size: 1.95vh; /*18px*/
+    text-align: top;
+}
+
+#buttonPanel{
+    margin-top:4.34vh; /*40px*/
+    display:block;
+}
+
+button{
+    width: 9vw; /*174px*/
+    height: 4vh; /*38px*/
+
+    border-radius: 30px;
+    font-size: 2.61vh; /*24px*/
+}
+
+#log_in_cancel{
+    display: inline-block;
+    margin-left: 2.5vw; /*40px*/
+    background-color: rgba(254, 110, 32, 0.322);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}
+
+#log_in_2{
+    display: inline-block;
+    margin-left: 10vw; /*230px*/
+    background-color: rgb(254, 110, 32);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}

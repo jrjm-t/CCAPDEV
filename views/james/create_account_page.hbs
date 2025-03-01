@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>create_account</title>
+        <link rel="stylesheet" type="text/css" href="james/landingStyle.css">
+        <link rel="stylesheet" type="text/css" href="james/createAccountStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <div id="leftFrame"></div>
+            <div class="border, dark-orange"></div>
+            <div id="rightFrame" class="light-orange">
+                <div id="pots_and_posts" class="inter-100">POTS & POSTS</div>
+                <div id="rightTitle">
+                    <span class="julius-sans-one-regular">Where Flavors Meet Stories</span>
+                </div>
+                <div class="center">
+                    <span class="inter-100" id="create_an_account">Create an account</span>
+                </div>
+                <div class="center">
+                    <form action="/register" method="POST">
+                        <label class="inter-100" name="email">Email
+                            <input type="text" name="email" autocomplete="name">
+                        </label>
+
+                        <label class="inter-100" name="username">Username
+                            <input type="text" name="username" autocomplete="name">
+                        </label>
+                        
+                        <label class="inter-100" name="password">Password
+                            <input type="password" name="password">
+                        </label>
+
+                        <div id="buttonPanel">
+                            <button type=button id="cancel" class="inter-100" onclick="location.href='/'">Cancel</button>
+                            <button type=submit id="sign_up" class="inter-100">Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="main_style.css">
+        <link rel="stylesheet" href="LUIstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <!-- LEFT SIDEBAR IF LOGGED OUT OF THE ACCOUNT -->
+            <div id="left" class="sidebar">
+                <div id="log-in">
+                    <a href="#">
+                    <img src="../media/log-in.png">
+                    <p>Log in</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">  
+                    <a href="../main_forum.html"><div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a> 
+                    <a href="#"><div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div></a>
+                    <a href="make_post.html"><div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div></a>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+            <div id="middle">
+                <!-- POST -->
+                <div class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">main_profile | Jan 27</span>
+                    </div>
+                    <div id="post_header" class="post_header">Header</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator">edited</div>
+                    <div id="post_text" class="post_text">
+                        This is what a post looks like when it’s not being hovered over 
+                        and when the text isn’t too long. The edit and delete button 
+                        arent there bc its not our post
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+
+                        <button class="btn" id="comment" onclick="addPopUp('comment', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                        <a href="edit_post.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
+                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 1 -->
+                <div class="comment_box">
+                    <a href="open_post_logged_in.html">
+                    <div class="post_username_section">
+                        <img src="../media/ellipse2.png" class="post_profile_pic">
+                        <span class="post_username">main_profile | Jan 27</span>
+                    </div>
+                    <div class="post_edit_indicator">edited</div>
+                    <div class="post_text">
+                        this is a comment
+                    </div>
+                    </a>
+                    <div class="post_interactions">
+                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'close_comment_popUp', 'comment_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+
+                        <button class="btn" onclick="liked('like-2')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                        <button class="btn" onclick="disliked('dislike-2')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                        <a href="edit_post.html" class="btn"><img src="../media/edit-post.png" alt="Edit"></a>
+                        <button class="btn"><img src="../media/delete-post.png" alt="Delete"></button>
+                    </div>
+                </div>
+                
+                <!-- POP-UPS -->
+                <div class="modal btn" id="log-in_popUp">
+                    <div class="modal-inner">
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <button id="sign-up" class="btn">Create an account</button>
+                        <p id="question">Already have an account?</p>
+                        <button id="log-in" class="btn">Log in</button>
+                        <button id="closePopUp" class="btn"><img src="../media/close.png"></button>
+                    </div>
+                </div>
+
+                <div class="modal btn" id="comment_popUp">
+                    <div class="modal-inner">
+                        <button id="close_comment_popUp" class="btn"><img src="../media/close.png"></button>
+                        <textarea class="textArea" placeholder="share your thoughts..."></textarea>
+                        <button id="post_comment" class="btn">Comment</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>

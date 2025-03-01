@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>log_in</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="james/landingStyle.css">
+        <link rel="stylesheet" type="text/css" href="james/loginStyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="content">
+            <div id="leftFrame">
+            </div>
+            <div class="border, light-orange"></div>
+
+            <div id="rightFrame">
+                <div id="pots_and_posts" class="inter-100">POTS & POSTS</div>
+                <div id="rightTitle">
+                    <span class="julius-sans-one-regular">Where Flavors Meet Stories</span>
+                </div>
+
+                <div id="log_in_box">
+                    <div class="inter-100">
+                        <span id="LOG_IN">LOG IN</span>
+                    </div>
+                    <div id="input_group">
+                        <form action="/login" method="POST">
+                            <label class="inter-100" name="username">Username or email
+                                <input type="text" name="username" autocomplete="name">
+                            </label>
+                            
+                            <label class="inter-100" name="password">Password
+                                <input type="password" name="password">
+                            </label>
+                            
+                            <div style="margin-top:10px">
+                                <input type="checkbox" id="remember_me" name="remember_me">
+                                <span class="inter-100" id="remember_label">Remember me</span>
+                            </div>
+                            <div id="buttonPanel">
+                                <button type=button id="log_in_cancel" class="inter-100" onclick="location.href='/'">Cancel</button>
+                                <button type=submit id="log_in_2" class="inter-100">Log in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

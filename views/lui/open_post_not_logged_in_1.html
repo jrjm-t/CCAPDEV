@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="stylesheet" href="LUIstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <!-- LEFT SIDEBAR IF LOGGED OUT OF THE ACCOUNT -->
+            <div id="left" class="sidebar">
+                <div id="log-in">
+                    <a href="../index.html">
+                    <img src="../media/log-in.png">
+                    <p>Log in</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">  
+                    <a href="../nian/main_forum_logged_out.html"><div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a> 
+                    <a href="#"><div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div></a>
+                    <a href="../index.html"><div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div></a>
+                </div>
+            </div>
+
+            <!-- MIDDLE SECTION:-->
+            <div id="middle">
+                <!-- POST -->
+                <div class="post_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
+                        <span class="post_username">SweetTreatsMama | May 31</span>
+                    </div></a>
+                    <div id="post_header" class="post_header">The Cookie Dough Dilemma – To Chill or Not to Chill?</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        1. Chilling = Less Spreading. Cold dough holds its shape better, giving you thick, chewy cookies instead of flat, sad ones 😥.
+                        <br>2. More Flavor. Letting the dough sit allows the flavors to develop—kind of like marinating meat 🤣!
+                        <br>3. Better Texture. The sugar has time to absorb moisture, leading to that crispy edge & soft center we all love 😍.
+                        <br>
+                        <br>Short on time? Chill for at least 30 minutes. But if you can, overnight is the best 😚!
+
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        
+                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!--Log-in pop-up-->
+                <div class="modal btn" id="log-in_popUp">
+                    <div class="modal-inner">
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <button id="sign-up" class="btn" onclick="location.href='../james/create_account_page.html'">Create an account</button>
+                        <p id="question">Already have an account?</p>
+                        <button id="log-in" class="btn" onclick="location.href='../james/log_in_page.html'">Log in</button>
+                        <button id="closePopUp" class="btn"><img src="../media/close.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>

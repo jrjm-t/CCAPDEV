@@ -1,0 +1,61 @@
+#create_an_account{
+    display: block;
+    margin-top: 6.5vh; /*60px*/
+    text-justify: center;
+    font-size: 6.95vh; /*64px*/
+    color: white;
+    font-weight: bold;
+}
+
+.center{
+    justify-content: center;
+    justify-self: center;
+}
+
+form{
+    font-size:2.61vh; /*24px*/
+}
+
+input{
+    display: block;
+    margin-top:1.08vh; /*10px*/
+    width: 33.80vw; /*649px*/
+    height: 5.54vh; /*51px*/
+    border-width: 0px;
+    border-radius: 10px;
+    font-size:2.60vh; /*24px*/
+}
+
+label{
+    display:block;
+    margin-top:2.17vh; /*20px*/
+}
+
+button{
+    width: 9.06vw; /*174px*/
+    height: 4.13vh; /*38px*/
+
+    border-radius: 30px;
+    font-size: 2.61vh; /*24px*/
+}
+
+#buttonPanel{
+    margin-top:4.34vh; /*40px*/
+    display:block;
+}
+
+#cancel{
+    display: inline-block;
+    margin-left: 2.08vw; /*40px*/
+    background-color: rgba(254, 110, 32, 0.322);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}
+
+#sign_up{
+    display: inline-block;
+    margin-left: 11.97vw; /*230px*/
+    background-color: rgb(254, 110, 32);
+    border-color: rgb(254, 110, 32);
+    color:white;
+}

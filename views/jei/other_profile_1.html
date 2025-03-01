@@ -1,0 +1,130 @@
+<!-- DadCooksDaily:-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <div id="left" class="sidebar">
+                <div id="user">
+                    <a href="main_profile.html">
+                    <img src="../media/SweetTreatsMama.png">
+                    <p>SweetTreatsMama</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">
+                    <a href="../nian/main_forum.html"> 
+                    <div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a> 
+                    <div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div>
+                    <div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- MIDDLE SECTION:-->
+             <div id="middle">
+                
+                <!-- PROFILE at top -->
+                <div id="profileBox">
+                        <a href="other_profile_1.html">
+                        <img id="bigPic" src="../media/DadCooksDaily.jpg">
+                        <div id="profileDetails">
+                            <h2>DadCooksDaily</h2></a>
+                        <p>
+                            Stay-at-home dad, home cook, and recipe sharer.<br>
+                            🍳👨‍🍳 Making meals with love, one dish at a time. <br>
+                            Simple, delicious, and family-approved recipes. <br>
+                            Let’s cook together!
+                            #DadInTheKitchen #HomeCooking
+                        </p>
+                    </div>
+                </div>
+
+                <!-- FIRST POST -->
+                <div id="post_box" class="post_box">
+                    <div class="post_username_section">
+                        <img src="../media/DadCooksDaily.jpg" class="post_profile_pic">
+                        <span class="post_username">DadCooksDaily | Jan 27</span>
+                    </div>
+                    <div id="post_header" class="post_header">🍗 Easy One-Pan Garlic Butter Chicken 🕺</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        Busy dads (and moms), this one's for you! A quick, no-fuss meal that’s packed with flavor and ready in under 30 minutes. Perfect for those hectic evenings when the little ones are running around!
+                        
+                        Ingredients:
+                        
+                        2 chicken breasts (or thighs for extra juiciness)
+                        3 tbsp butter
+                        4 cloves garlic, minced
+                        1 tsp paprika
+                        1/2 tsp salt & pepper
+                        1/2 tsp dried thyme
+                        1/2 tsp chili flakes (optional)
+                        1/2 cup chicken broth
+                        1 tbsp lemon juice
+                        
+                        Instructions:
+                        1️⃣ Season chicken with salt, pepper, paprika, and thyme.
+                        2️⃣ Heat 1 tbsp butter in a pan over medium heat. Sear chicken on both sides until golden (about 4-5 mins per side). Remove & set aside.
+                        3️⃣ In the same pan, add remaining butter and garlic. Sauté until fragrant.
+                        4️⃣ Pour in chicken broth and lemon juice. Let it simmer for 2 mins, then add chicken back in.
+                        5️⃣ Simmer for another 5 mins until chicken is cooked through. Spoon sauce over the top & enjoy!
+                        <br>
+                        Serve with rice, mashed potatoes, or veggies. My kids love it with roasted potatoes! Let me know if you try it! 🍽️
+
+                        #DadCooksDaily #EasyDinners #HomeCooking #OnePanMeals
+                        <img id="post_photo" src="../media/garlic_butter.jpg">
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        <button class="btn"><img src="../media/comment.png" alt="Comment"></button>
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+            <div id="center">
+                
+            </div>
+
+        </main>
+        <script src="javascript.js"></script>
+    </body>
+</html>

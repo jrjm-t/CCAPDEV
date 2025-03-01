@@ -1,0 +1,148 @@
+:root{
+    --dark-Orange:rgb(254, 111, 32);
+    --light-orange:rgb(255, 182, 77);
+}
+
+/*note: my viewport height is around 920 pixels, not 1080 as previously imagined...*/
+/*also, the landing page, create account page, and log in page all include this stylsheet for uniformity
+while also having their own specific sheets*/
+
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter-100 {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dark-orange{
+    background-color: var(--dark-Orange);
+}
+
+.border, .light-orange{
+    width: 5.88vw; /*113px*/
+    background-color: var(--light-orange);
+    justify-self: center;
+}
+
+.border, .dark-orange{
+    width: 5.88vw; /*113px*/
+    background-color: var(--dark-Orange);
+    justify-self: center;
+}
+
+#content{
+    display:flex;
+    grid-template-columns: auto auto;
+    flex-wrap:nowrap;
+    height: 100%;
+}
+
+#leftFrame{
+    background-image: url(../media/background.png);
+    background-repeat: repeat-y;
+    background-size: 44.1vw 100vh;
+    align-items: left;
+    width: 44.1vw;
+    height: 100vh;
+}
+
+#rightFrame{
+    background-repeat: repeat-y;
+    width: 50vw;
+    height: 100vh;
+}
+
+#pots_and_posts{
+    margin-top: 8vh; /*110px*/
+    justify-self: center;
+    font-weight: bolder;
+    font-size:3.4vh; /*32px*/
+}
+
+#rightTitle{
+    margin-top: 1.3vh /*12px*/;
+    font-size:9.7vh; /*90px*/
+    align-self: center;
+    justify-self: center;
+    max-width: 93.91vh; /*864px*/
+    min-height: 9.89vh; /*91px*/
+    text-align: center;
+    /*word-spacing: 10px*/
+    line-height: 7.608vh; /*70px*/
+}
+
+#subtitle{
+    margin-top: 14.13vh; /*130px*/
+    font-size:2.17vh; /*20px*/
+    align-self: center;
+    justify-self: center;
+    max-width: 74.78vh; /*688px*/
+    text-align: center;
+    /*word-spacing: 5px*/
+    line-height: 4.357vh; /*40px*/
+    font-size:3.478vh; /*32px*/
+    font-weight:600;
+}
+
+/*formatting applied to all buttons classified as part of the landing*/
+button.landing{
+    width: 24.6875vw; /*474px*/
+    min-height: 6.086vh; /*56px*/
+    border-radius: 30px; /*30px*/
+    font-size:3.478vh; /*32px*/
+    justify-self: center;
+}
+
+/*all buttons across login, creation, and landing page have a transition*/
+button{
+    transition: transform 0.1s;
+    color: color 1s;
+}
+
+button:hover{
+    transform: scale(1.01,1);
+    color: rgb(1, 1, 161) !important;
+}
+
+#create_acc_button{
+    display:block;
+    margin-top:2.173vh; /*20px*/
+    background-color: var(--dark-Orange);
+    border-color: var(--dark-Orange);
+    color: white;
+}
+
+#no_acc_button{
+    display:block;
+    margin-top:1.08vh; /*10px*/
+    background-color: var(--dark-Orange);
+    border-color: var(--dark-Orange);
+    color: white;
+}
+
+#already_have_account{
+    margin-top:8.695vh; /*80px*/
+    text-justify: center;
+    color: var(--dark-Orange);
+    /*word-spacing: 5px*/
+    line-height: 15px;
+    font-size:3.478vh; /*32px*/
+    font-weight: 300;
+    justify-self: center;
+}
+
+#log_in_button{
+    display:block;
+    margin-top:2.826vh; /*26px*/
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0);
+    border-width: 2px;
+    border-color: var(--dark-Orange);
+    color: var(--dark-Orange);
+}

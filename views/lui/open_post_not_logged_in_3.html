@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pots & Posts</title>
+        <link rel="stylesheet" href="../main_style.css">
+        <link rel="stylesheet" href="LUIstyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <header>
+            <div id="logo_bg">
+                <img src="../media/ellipse.png">
+            </div>
+            <div id="logo">
+                <img src="../media/logo.png">
+            </div>
+            <div id="headerText">Pots & Posts</div>
+        </header>
+
+        <main>
+
+            <!-- LEFT SIDEBAR IF LOGGED OUT OF THE ACCOUNT -->
+            <div id="left" class="sidebar">
+                <div id="log-in">
+                    <a href="../index.html">
+                    <img src="../media/log-in.png">
+                    <p>Log in</p>
+                    </a>
+                </div>
+                <div id="sidebarMenu">  
+                    <a href="../nian/main_forum_logged_out.html"><div id="home" class="container">
+                        <img src="../media/home.png">
+                        <p>Home</p>
+                    </div></a> 
+                    <a href="#"><div class="container">
+                        <img src="../media/settings.png">
+                        <p>Settings</p>
+                    </div></a>
+                    <a href="../index.html"><div id="post" class="container">
+                        <img src="../media/add.png">
+                        <p>Post</p>
+                    </div></a>
+                </div>
+            </div>
+
+            <!-- MIDDLE SECTION:-->
+            <div id="middle">
+                <!-- POST -->
+                <div class="post_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
+                        <span class="post_username">DadCooksDaily | Jan 9</span>
+                    </div></a>
+                    <div id="post_header" class="post_header">🍗 Easy One-Pan Garlic Butter Chicken 🕺</div>
+                    <div id="post_edit_indicator" class="post_edit_indicator"></div>
+                    <div id="post_text" class="post_text">
+                        Busy dads (and moms), this one's for you! A quick, no-fuss meal that’s packed with flavor and ready in under 30 minutes. Perfect for those hectic evenings when the little ones are running around!
+                        <br>
+                        <br>Ingredients:
+                        <br>
+                        <br>2 chicken breasts (or thighs for extra juiciness)
+                        <br>3 tbsp butter
+                        <br>4 cloves garlic, minced
+                        <br>1 tsp paprika
+                        <br>1/2 tsp salt & pepper
+                        <br>1/2 tsp dried thyme
+                        <br>1/2 tsp chili flakes (optional)
+                        <br>1/2 cup chicken broth
+                        <br>1 tbsp lemon juice
+                        <br>Instructions:
+                        <br>1️⃣ Season chicken with salt, pepper, paprika, and thyme.
+                        <br>2️⃣ Heat 1 tbsp butter in a pan over medium heat. Sear chicken on both sides until golden (about 4-5 mins per side). Remove & set aside.
+                        <br>3️⃣ In the same pan, add remaining butter and garlic. Sauté until fragrant.
+                        <br>4️⃣ Pour in chicken broth and lemon juice. Let it simmer for 2 mins, then add chicken back in.
+                        <br>5️⃣ Simmer for another 5 mins until chicken is cooked through. Spoon sauce over the top & enjoy!
+                        <br>
+                        <br>Serve with rice, mashed potatoes, or veggies. My kids love it with roasted potatoes! Let me know if you try it! 🍽️
+                        <br>
+                        <br>#DadCooksDaily #EasyDinners #HomeCooking #OnePanMeals
+                        <img src="../media/garlic_butter.jpg">
+                    </div>
+                    <div id="post_interactions" class="post_interactions">
+                        
+                        <button class="btn" id="comment0" onclick="addPopUp('comment0', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+
+                        <button class="btn" onclick="liked('like-1')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-1"></button>
+                        <button class="btn" onclick="disliked('dislike-1')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-1"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 1 -->
+                <div class="comment_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/GrillMasterMike.png" class="post_profile_pic">
+                        <span class="post_username">GrillMasterMike | Jan 9</span>
+                    </div></a>
+                    <div class="post_edit_indicator"></div>
+                    <div class="post_text">
+                        Now THIS is my kind of weeknight meal! Simple, buttery, and 
+                        packed with flavor. Might have to throw this on the grill and 
+                        see how it turns out. 🔥
+                    </div>
+                    <div class="post_interactions">
+                        
+                        <button class="btn" id="comment1" onclick="addPopUp('comment1', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+                        
+                        <button class="btn" onclick="liked('like-2')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-2"></button>
+                        <button class="btn" onclick="disliked('dislike-2')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-2"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 2 -->
+                <div class="comment_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/SweetTreatsMama.png" class="post_profile_pic">
+                        <span class="post_username">SweetTreatsMama | Jan 9</span>
+                    </div></a>
+                    <div class="post_edit_indicator"></div>
+                    <div class="post_text">
+                        Garlic + butter = magic! 
+                        Also, if your kids eat all their chicken, 
+                        I have some leftover cookies as a reward. Just saying. 😉
+                    </div>
+                    <div class="post_interactions">
+                        
+                        <button class="btn" id="comment2" onclick="addPopUp('comment2', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+                        
+                        <button class="btn" onclick="liked('like-3')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-3"></button>
+                        <button class="btn" onclick="disliked('dislike-3')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-3"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 3 -->
+                <div class="comment_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/TheSpicySpoon.png" class="post_profile_pic">
+                        <span class="post_username">TheSpicySpoon | Jan 10</span>
+                    </div></a>
+                    <div class="post_edit_indicator"></div>
+                    <div class="post_text">
+                        Love it! But hear me out—what if we add a 
+                        little cayenne and a drizzle of chili oil at the end?
+                    </div>
+                    <div class="post_interactions">
+                        
+                        <button class="btn" id="comment3" onclick="addPopUp('comment3', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+                        
+                        <button class="btn" onclick="liked('like-4')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-4"></button>
+                        <button class="btn" onclick="disliked('dislike-4')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-4"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 4 -->
+                <div class="comment_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/ChefInTrainingEm.jpg" class="post_profile_pic">
+                        <span class="post_username">ChefInTrainingEm | Jan 10</span>
+                    </div></a>
+                    <div class="post_edit_indicator"></div>
+                    <div class="post_text">
+                        Omg, this looks so good!! I’ve never 
+                        cooked chicken like this before, but I’m definitely trying it!
+                    </div>
+                    <div class="post_interactions">
+                        
+                        <button class="btn" id="comment4" onclick="addPopUp('comment4', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+                        
+                        <button class="btn" onclick="liked('like-5')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-5"></button>
+                        <button class="btn" onclick="disliked('dislike-5')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-5"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!-- COMMENT 5 -->
+                <div class="comment_box">
+                    <a href="../index.html"><div class="post_username_section">
+                        <img src="../media/DadCooksDaily.jpg" class="post_profile_pic">
+                        <span class="post_username">DadCooksDaily | Jan 11</span>
+                    </div></a>
+                    <div class="post_edit_indicator"></div>
+                    <div class="post_text">
+                        Honestly, this meal is a lifesaver on busy nights. 
+                        One pan, easy cleanup, and the kids actually eat it without too much negotiating. 
+                        😂 Pro tip: Make extra sauce because everyone’s gonna want to drizzle it 
+                        over their rice or mashed potatoes!
+                    </div>
+                    <div class="post_interactions">
+                        
+                        <button class="btn" id="comment5" onclick="addPopUp('comment5', 'closePopUp', 'log-in_popUp')">
+                            <img src="../media/comment.png" alt="Comment">
+                        </button>
+                        
+                        <button class="btn" onclick="liked('like-6')"><img src="../media/upvote.png" alt="Thumbs Up" id="like-6"></button>
+                        <button class="btn" onclick="disliked('dislike-6')"><img src="../media/downvote.png" alt="Thumbs Down" id="dislike-6"></button>
+                        <button class="btn"><img src="../media/share.png" alt="Share"></button>
+                    </div>
+                </div>
+
+                <!--Log-in pop-up-->
+                <div class="modal btn" id="log-in_popUp">
+                    <div class="modal-inner">
+                        <p id="app_name">POTS & POSTS</p>
+                        <h1>Where Flavors Meets Stories</h1>
+                        <h2>Join the community to comment and post!</h2>
+                        <p id="slogan">Share posts full of taste and pots full of love.</p>
+                        <button id="sign-up" class="btn" onclick="location.href='../james/create_account_page.html'">Create an account</button>
+                        <p id="question">Already have an account?</p>
+                        <button id="log-in" class="btn" onclick="location.href='../james/log_in_page.html'">Log in</button>
+                        <button id="closePopUp" class="btn"><img src="../media/close.png"></button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR -->
+            <div id="right" class="sidebar">
+                <form>
+                    <div class="search">
+                        <img src="../media/search.png">
+                        <input class="search-input" type="search" placeholder="search">
+                    </div>
+                </form>
+            </div>
+
+        </main>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
